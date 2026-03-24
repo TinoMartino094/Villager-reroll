@@ -1,0 +1,18 @@
+{
+	"required": true,
+	"package": "com.tino.reroll.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"MerchantOfferMixin",
+		"VillagerMixin",
+		"VillagerTradeMixin",
+		"AnvilMenuMixin",
+		"AbstractVillagerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "villager-reroll",
+	"version": "${version}",
+	"name": "Villager reroll",
+	"description": "Master the Market. Villager Reroll transforms trading into a collaborative journey. Hunt Trial Chambers for Heavy Cores, inscribe them with power, and upgrade your villagers' trades beyond their limits. With forced Level 1 books and strategic rerolls via Recovery Compasses, the path to the perfect trade now requires teamwork, exploration, and a bit of luck.",
+	"authors": [
+		"TinoMartino"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/villager-reroll/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.tino.reroll.VillagerReroll"
+		]
+	},
+	"mixins": [
+		"villager-reroll.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"fabric-api:client-optional": true
+	}
+}
