@@ -17,6 +17,7 @@ public class VillagerReroll implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		com.tino.reroll.config.ModConfig.load();
 		LOGGER.info("Villager Reroll initialized!");
 		ItemTooltipCallback.EVENT.register(new ItemTooltipHandler());
 	}

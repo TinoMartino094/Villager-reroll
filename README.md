@@ -1,31 +1,30 @@
 # Villager Reroll
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Minecraft Version](https://img.shields.io/badge/Minecraft-26.1-blue.svg)
 
-**Master the Market.** Villager Reroll transforms trading into a collaborative journey. Hunt Trial Chambers for Heavy Cores, inscribe them with power, and upgrade your villagers' trades beyond their limits.
+**Villager Reroll** is a Quality-of-Life (QOL) and rebalance mod that refines the librarian trading system by providing better control over trade generation and a clear progression path for obtaining high-level enchantments.
 
-## Current Features
+- **How to Reroll**: Right-click any non-novice villager with a `Recovery Compass` (configurable) to instantly reroll the trades for their current profession level.
+- **Note**: This feature is disabled for Level 1 villagers as their trades are already easily rerolled by replacing their workstation.
 
-- **Strategic Rerolls**: Use a `Recovery Compass` on any villager (Level 2 or higher) to reroll all trades for their current profession level. Adds a meaningful use for Recovery Compasses in late-game trade management.
-- **Fair Market Economy**: All traded enchanted books are forced to **Level 1**, preventing easy access to max-tier gear and encouraging mechanical progression.
-- **Tiered Pricing**: Enchantment prices are balanced based on rarity. Treasure and Curse enchantments cost more (10-38 emeralds), while standard enchantments are more affordable (5-19 emeralds).
-- **Heavy Core Inscription**: Utilize the mysterious **Heavy Core** from Trial Chambers to "inscribe" enchantments. Combining a Heavy Core with an Enchanted Book in an anvil creates an **Inscribed Heavy Core**.
-- **Dynamic Trade Upgrades**: Use an Inscribed Heavy Core on a villager to increase the level of matching enchantments in their trades by +1. This allows players to "level up" their favorite traders over time.
+## All Books Level 1
+For a more standardized and balanced experience, **every enchanted book offered by villagers is set to Level 1**. This ensures that obtaining max-level gear vía villagers is harder and makes enchanting via villagers an end game feature.
 
-## How to Use
+Since books start at Level 1, the mod provides a dedicated path to upgrade your villager's offerings:
 
-### Rerolling Trades
-Simply right-click a villager with a `Recovery Compass`. Not applicable to Novice (Level 1) villagers, as moving their workstation is already a free reroll method.
+- Use an anvil to combine an item (Default: **Heavy Core**, configurable) with an **Enchanted Book**.
+- This creates an **Inscribed Item** that stores the enchantment.
+- You can stack inscriptions in the anvil to increase the enchantment level (e.g., Level 1 + Level 1 = Level 2).
 
-### Inscribing Heavy Cores
-1. Place a **Heavy Core** in the first slot of an Anvil.
-2. Place an **Enchanted Book** in the second slot.
-3. The result will be an **Inscribed Heavy Core** containing that enchantment. If the core already has the enchantment, its level will be incremented (up to max).
+### Upgrading Book trades
+- **Right-click a villager** with an Inscribed Item.
+- If the item's enchantment matches a trade and the item's level is higher, the trade will be **upgraded by +1 level**.
 
-### Upgrading Trades
-Right-click a villager with an **Inscribed Heavy Core**. If the core contains an enchantment that the villager currently offers, and the core's level is higher than the trade's level, the trade will be upgraded by +1 level. Each upgrade increases the emerald cost by +3.
+## 🌍 Villager Rebalance Extras
+Built to extend the **Minecraft Trade Rebalance** experiment:
+- **Biome-Specific Expertise**: Librarians offer specialized book pools based on their native biome (Swamp, Snow, Jungle, etc.).
+- **Requirement**: You **must** enable the `TRADE_REBALANCE` feature flag during world creation for these features to function.
 
 ---
 
-*This mod was developed with the assistance of Antigravity, an AI coding assistant by Google DeepMind.*
+This mod was developed with the use of AI. I tested the mod to get rid of most of the bugs, but some of them might have slipped trough. Feel free to report them.

@@ -37,7 +37,7 @@ public abstract class AnvilMenuMixin extends ItemCombinerMenu {
         ItemStack input = this.inputSlots.getItem(0);
         ItemStack addition = this.inputSlots.getItem(1);
         // If it's our recipe and we have a stack, prepare to preserve the rest
-        if (input.is(Items.HEAVY_CORE) && addition.is(Items.ENCHANTED_BOOK) && input.getCount() > 1) {
+        if (input.is(com.tino.reroll.config.ModConfig.INSTANCE.getInscriptionItem()) && addition.is(Items.ENCHANTED_BOOK) && input.getCount() > 1) {
             this.villager_reroll$shouldPreserveCore = true;
             this.villager_reroll$preservedStack = input.copy();
             this.villager_reroll$preservedStack.shrink(1);
@@ -60,7 +60,7 @@ public abstract class AnvilMenuMixin extends ItemCombinerMenu {
         ItemStack input = this.inputSlots.getItem(0);
         ItemStack addition = this.inputSlots.getItem(1);
 
-        if (input.is(Items.HEAVY_CORE) && addition.is(Items.ENCHANTED_BOOK)) {
+        if (input.is(com.tino.reroll.config.ModConfig.INSTANCE.getInscriptionItem()) && addition.is(Items.ENCHANTED_BOOK)) {
             ItemEnchantments inputEnchants = input.getOrDefault(DataComponents.STORED_ENCHANTMENTS, ItemEnchantments.EMPTY);
             ItemEnchantments additionEnchants = addition.getOrDefault(DataComponents.STORED_ENCHANTMENTS, ItemEnchantments.EMPTY);
 

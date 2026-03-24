@@ -50,8 +50,8 @@ public abstract class VillagerMixin extends AbstractVillager {
     private void villager_reroll$interact(Player player, InteractionHand hand, CallbackInfoReturnable<InteractionResult> cir) {
         ItemStack stack = player.getItemInHand(hand);
         
-        // Feature 1: Reroll trades with Recovery Compass
-        if (stack.is(Items.RECOVERY_COMPASS)) {
+        // Feature 1: Reroll trades with Configured Item
+        if (stack.is(com.tino.reroll.config.ModConfig.INSTANCE.getRerollItem())) {
             if (!this.level().isClientSide()) {
                 int currentLevel = this.getVillagerData().level();
                 // Restriction: Don't work on Level 1 (Novice) villagers - breaking workstation is free
@@ -87,8 +87,8 @@ public abstract class VillagerMixin extends AbstractVillager {
             cir.setReturnValue(InteractionResult.SUCCESS);
         }
 
-        // Feature 3 Part B: Upgrade trades with Heavy Core
-        if (stack.is(Items.HEAVY_CORE)) {
+        // Feature 3 Part B: Upgrade trades with Configured Item
+        if (stack.is(com.tino.reroll.config.ModConfig.INSTANCE.getInscriptionItem())) {
             if (!this.level().isClientSide()) {
                 net.minecraft.world.item.component.CustomData customData = stack.get(DataComponents.CUSTOM_DATA);
                 if (customData == null || customData.isEmpty()) {

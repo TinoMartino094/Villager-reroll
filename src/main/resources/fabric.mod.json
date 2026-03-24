@@ -3,7 +3,7 @@
 	"id": "villager-reroll",
 	"version": "${version}",
 	"name": "Villager reroll",
-	"description": "Master the Market. Villager Reroll transforms trading into a collaborative journey. Hunt Trial Chambers for Heavy Cores, inscribe them with power, and upgrade your villagers' trades beyond their limits. With forced Level 1 books and strategic rerolls via Recovery Compasses, the path to the perfect trade now requires teamwork, exploration, and a bit of luck.",
+	"description": "A Quality-of-Life and rebalance mod that refines librarian trading. Provides better control over trade generation with Recovery Compass rerolls and a clear progression path for high-level enchantments. Featuring standardized Level 1 books and an item-based upgrade system, this mod acts as a companion to the Minecraft Trade Rebalance experiment.",
 	"authors": [
 		"TinoMartino"
 	],

@@ -18,7 +18,7 @@ import java.util.Map;
 public class ItemTooltipHandler implements ItemTooltipCallback {
     @Override
     public void getTooltip(ItemStack stack, Item.TooltipContext context, TooltipFlag flag, List<Component> lines) {
-        if (stack.is(Items.HEAVY_CORE)) {
+        if (stack.is(com.tino.reroll.config.ModConfig.INSTANCE.getInscriptionItem())) {
             net.minecraft.world.item.component.CustomData customData = stack.get(DataComponents.CUSTOM_DATA);
             if (customData != null && !customData.isEmpty()) {
                 net.minecraft.nbt.CompoundTag tag = customData.copyTag();
